@@ -3,7 +3,6 @@ services:
   app: 
     container_name: docker-reactjs
     build: .
-    stdin_open: true
     volumes:
       - ./src:/app/src
     ports:
