@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app: 
+    container_name: docker-reactjs
+    build: .
+    stdin_open: true
+    volumes:
+      - ./src:/app/src
+    ports:
+      - '3000:3000'
